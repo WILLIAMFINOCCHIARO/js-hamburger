@@ -16,10 +16,18 @@ const menucloser = document.querySelector('header .hamburger-menu .close');
 // });
 
 // secondo metodo
-element.addEventListener("click", 
-function() {
-  document.querySelector(".header-right > a").className = ".hamburgher-menu";
-});
+element.addEventListener("click", aprimenu);
+function aprimenu() {
+  hamburgher.classList.add ("active");
+};
+
+menucloser.addEventListener("click", chiudimenu);
+function chiudimenu() {
+  hamburgher.classList.remove ("active");
+};
+
+
+
 
 
 
